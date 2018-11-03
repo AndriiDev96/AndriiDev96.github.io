@@ -1,0 +1,25 @@
+{
+  "name": "homeworkrwd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndriiDev96/HomeworkRWD.git"
+  },
+  "author": "Andrii Volianskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndriiDev96/HomeworkRWD/issues"
+  },
+  "homepage": "https://github.com/AndriiDev96/HomeworkRWD#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}

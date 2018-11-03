@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="animations">
+        
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-4">
+                <div class="fadeIn my-5">
+                    <p class="animation_1">Animation fadeIn</p>
+                </div>
+                <button type="button" id="btn1" class="btn btn-success">Show</button>
+            </div>
+            <div class="col-md-4">
+                <div class="wobble my-5">
+                    <p class="animation_2">Animation Wobble</p>
+                </div>
+                <button type="button" id="btn2"  class="btn btn-primary">Show</button>
+            </div>
+            <div class="col-md-4">
+                <div class="swing my-5">
+                    <p class="animation_3">Animation Swing</p>
+                </div>
+                <button type="button" id="btn3" class="btn btn-danger">Show</button>
+            </div>            
+        </div>
+
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        /* Shit code */
+        const anim1 = document.querySelector('.fadeIn');
+        const anim2 = document.querySelector('.wobble');
+        const anim3 = document.querySelector('.swing');
+
+        document.querySelector('#btn1').addEventListener('click', () => {
+            anim1.classList.remove('animation_1');
+
+            window.requestAnimationFrame( () => {
+            anim1.classList.add('animation_1');
+            })
+        });
+       
+        document.querySelector('#btn2').addEventListener('click', () => {
+            anim2.classList.remove('animation_2');
+             
+            window.requestAnimationFrame( () => {
+            anim2.classList.add('animation_2');
+            })
+
+        });
+
+       document.querySelector('#btn3').addEventListener('click', () => {
+            anim3.classList.remove('animation_3');
+
+            window.requestAnimationFrame( () => {
+            anim3.classList.add('animation_3');
+            })
+        });
+    </script>
+</body>
+</html>

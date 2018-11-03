@@ -1,0 +1,91 @@
+body{
+    text-align: center;
+}
+
+/* Style Navbar */
+.navbar-top{
+    height: 60px;
+}
+
+.navbar-top > div{
+    background-color: #ccc;
+}
+
+.navbar-top h6{
+    position: relative;
+    top: 20%;
+    margin: 0;
+}
+
+/* Style Section Hero */
+.hero-center{
+    height: 100%;
+}
+
+.hero-center > div{
+    background-color: #ccc;
+}
+
+.hero-center div:only-child{
+    background-color: rgb(45, 126, 158);
+    color: white;
+}
+
+.hero-center h6{
+    padding: 15px 0 15px 0;
+}
+
+/* Body Sidebar */
+.body-center .articleFeat, .articleList, .sidebar{
+    height: 500px;
+    background-color:#ccc;
+}
+
+.body-center h6{
+    position: relative;
+    top: 30%;
+    padding: 10px 0 10px 0;
+}
+
+.breakdown-row{
+    display: none;
+    background-color:rgb(45, 126, 158);
+    color: white;
+}
+
+/* Style Sidebar */
+.body-center .sidebar{
+    background-color: rgb(88, 169, 184);
+}
+
+/* Style Footer */
+footer .row{
+    padding-top: 5px;
+    height: 50px;
+    background-color: #ccc;
+}
+
+/* media for changing height */
+@media screen and (max-width: 992px){
+    .body-center .articleFeat{
+        height: 100px;
+    }
+    .body-center .sidebar{
+        height: 50px;
+    }
+    .hero-center div:only-child{
+        display: none;
+    }
+    .breakdown-row{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .body-center .articleFeat{
+        height: 100%;
+    }
+    .body-center h6{
+        top: 0;
+    }
+}
