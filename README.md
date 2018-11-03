@@ -9,16 +9,19 @@ My all homeworks
 4. Media Queries [See the result](https://andriidev96.github.io/Week1/HomeworkRWD/app/index.html)
 5. Bootstrap [See the result](https://andriidev96.github.io/Week1/HomeWBootstrap/index.html)
 6. Animation @keyframes [See the result](https://andriidev96.github.io/Week1/TaskAdvanced/index.html)
-_______
+
+***
 
 ### Homework_L1W2
 .
 .
 .
-_______
+
+***
 
 ### Homework_L1W3
 .
 .
 .
-_______
+
+***
