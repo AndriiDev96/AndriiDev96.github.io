@@ -1,7 +1,7 @@
 # Andrii Volianskyi
 My all homeworks
 
-#Homework_L1W1
+# Homework_L1W1
 
 1. Games [See the result](https://drive.google.com/open?id=1O5wCaDpAqyJhSZvpLPZWMbjufguX6SOx)
 2. HTML&CSS [See the result](https://andriidev96.github.io/Week1/HomeworkMarkup/app//index.html)
@@ -11,13 +11,13 @@ My all homeworks
 6. Animation @keyframes [See the result](https://andriidev96.github.io/Week1/TaskAdvanced/index.html)
 _______
 
-#Homework_L1W2
+# Homework_L1W2
 .
 .
 .
 _______
 
-#Homework_L1W3
+# Homework_L1W3
 .
 .
 .
