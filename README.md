@@ -1,4 +1,4 @@
-# Andrii Volianskyi :v: :blush:
+# Andrii Volianskyi:v:
 My all homeworks
 
 ### Homework_L1W1 :unlock:
@@ -14,14 +14,14 @@ My all homeworks
 
 ***
 
-### Homework_L1W2 :lock:
+### Homework_L1W2:lock:
 .
 .
 .
 
 ***
 
-### Homework_L1W3 :lock:
+### Homework_L1W3:lock:
 .
 .
 .
