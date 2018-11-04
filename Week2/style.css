@@ -1,0 +1,10 @@
+.content{
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  font-size: 70px;
+}
+
+span{
+  color: rgba(122, 2, 2, 0.897);
+}
