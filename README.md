@@ -1,7 +1,7 @@
-# Andrii Volianskyi:v:
+# Andrii Volianskyi
 My all homeworks
 
-### Homework_L1W1 :unlock:
+### Homework_L1W1
 
 1. Games [See the result](https://drive.google.com/open?id=1O5wCaDpAqyJhSZvpLPZWMbjufguX6SOx)
 2. HTML&CSS [See the result](https://andriidev96.github.io/Week1/HomeworkMarkup/app//index.html)
@@ -14,14 +14,14 @@ My all homeworks
 
 ***
 
-### Homework_L1W2:lock:
+### Homework_L1W2
 .
 .
 .
 
 ***
 
-### Homework_L1W3:lock:
+### Homework_L1W3
 .
 .
 .
