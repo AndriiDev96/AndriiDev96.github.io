@@ -15,9 +15,8 @@ My all homeworks
 ***
 
 ### Homework_L1W2
-.
-.
-.
+
+**Link to the homework_L1W2** [Repository](https://github.com/AndriiDev96/HomeworkL1W2)
 
 ***
 
