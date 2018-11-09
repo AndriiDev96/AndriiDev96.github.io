@@ -25,7 +25,7 @@ My all homeworks
 **It's important to know.** To see the result, You need to open the console.
 
 1. Polyfill [See the result](https://andriidev96.github.io/Week3/PolyfillMap/index.html)
-2. Explanation setTimeout [See the result](https://github.com/andriiDev96/AndriiDev96.github.io/tree/master/Week3/explanationSetTimeout)
+2. Explanation setTimeout [See the result](https://github.com/AndriiDev96/AndriiDev96.github.io/blob/master/Week3/explanationSetTimeout/Readme.md)
 3. Function setTimeout [See the result](https://andriiDev96.github.io/Week3/setTime/index.html)
 4. Promise [See the result](https://andriiDev96.github.io/Week3/Promise/Index.html)
 5. Recursive function [See the result](https://andriiDev96.github.io/Week3/Recursing/index.html)
