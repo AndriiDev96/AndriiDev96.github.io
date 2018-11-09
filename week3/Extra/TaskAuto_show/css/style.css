@@ -1,3 +1,8 @@
+body{
+  position: relative;
+  height: 100%;
+}
+
 .logo-img{
   background: url("../img/logo/sedan-car-front.png") no-repeat center;
   background-size: cover;
@@ -92,8 +97,25 @@ form{
   display: none;
 }
 
-.calculation-result ul{
+.calculation-result h6 i{
+  font-size: 40px;
+  color: #33b5e5;
+}
+
+.calculation-result p{
+  font-size: 18px;
+}
+
+.result-information ul{
   list-style: none;
+}
+
+.result-information ul li:nth-child(5){
+  font-weight: 700;
+}
+
+.result-information ul li:nth-child(6){
+  font-weight: 700;
 }
 
 /* Style modal window */
@@ -102,8 +124,13 @@ form{
 }
 
 /* Style footer */
-footer{
-  position: relative;
-  bottom: 0;
+footer.page-footer{
+  position: absolute;
   width: 100%;
 }
+
+/* footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+} */

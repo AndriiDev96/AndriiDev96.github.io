@@ -44,15 +44,13 @@ const auditory1 = new Auditory(30, false);
 const auditory2 = new Auditory(40, true);
 const auditory3 = new Auditory(20, true);
 
-//const people = 35;
-
-console.log('Look for an auditory of ' + people + ' people + projector ...');
+console.log('Пошук аудиторії на ' + people + ' осіб + projector ...');
 
 (function(){
   setTimeout(() => {
-    console.log('In Auditory1 ' + auditory1.check(people) +', ' + 'projector ' + auditory1.checkProjector());
-    console.log('In Auditory2 ' + auditory2.check(people) +', ' + 'projector ' + auditory2.checkProjector());
-    console.log('In Auditory3 ' + auditory3.check(people) +', ' + 'projector ' + auditory3.checkProjector());
+    console.log('В Auditory1 ' + auditory1.check(people) +', ' + 'projector ' + auditory1.checkProjector());
+    console.log('В Auditory2 ' + auditory2.check(people) +', ' + 'projector ' + auditory2.checkProjector());
+    console.log('В Auditory3 ' + auditory3.check(people) +', ' + 'projector ' + auditory3.checkProjector());
   },4000);
 })();
 

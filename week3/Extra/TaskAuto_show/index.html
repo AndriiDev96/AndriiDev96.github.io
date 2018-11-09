@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>AS | Maestro</title>
+  <title>Auto show | Maestro</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -56,9 +56,9 @@
   </section>
   
   <!-- Section Tax Calculation -->
-  <section class="section-calculation">
-    <div class="container">
-    <div class="row mt-5">
+  <section class="section-calculation pb-5">
+    <div class="container pb-5">
+      <div class="row mt-5 ">
         <div class="col-md-8">
           <div class="horizontal-stepper">
             <div class="name-form">
@@ -108,7 +108,7 @@
               <div class="col-md-6">
                 <!-- Material input -->
                 <div class="md-form form-group">
-                  <input type="text" class="form-control" id="mark-auto" length="15">
+                  <input type="text" class="form-control" id="mark-auto" pattern = "^[a-zA-Z]+$" title="Повинні вказати марку автомобіля." length="15">
                   <label for="inputEmail4MD">Mark</label>
                 </div>
               </div>
@@ -150,7 +150,7 @@
             </div>
             <!-- Grid row -->
           
-            <button type="submit" class="btn btn-primary btn-md mb-5" id="countBtn">Count</button>
+            <button type="submit" class="btn btn-primary btn-md mb-5" id="idButton">Count</button>
             </div>
           </form>
         </div>
@@ -168,8 +168,12 @@
             <hr>
           </div>
           
-          <div class="calculation-result text-left" id="list-data">
+          <div class="calculation-result text-left">
             <h5 class="text-center mb-3">Result</h5>
+            <div class="result-information" id="list-data"></div>
+            <h6 class="text-center mt-5"><i class="fas fa-info-circle"></i></h6>
+            <hr>
+            <p class="text-center">In order to repeat counting tax and discount, <strong>You need to refresh the page</strong> </p>
           </div>
         </div>
       </div>
@@ -208,7 +212,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="page-footer font-small blue mt-5">
+  <footer class="page-footer font-small blue">
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2018 Copyright:

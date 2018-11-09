@@ -66,24 +66,32 @@ const auto4 = new Autoshow("BMW", 2.0, 26000, 2015);
 
  */
 
+//My new version
 const todayYear = new Date().getFullYear(),
       nameMarkAuto = document.querySelector('#mark-auto'),
       volumeAuto = document.querySelector('#volume-auto'),
       priceAuto = document.querySelector('#price-auto'),
       yearAuto = document.querySelector('#year-auto'),
+      buttonCount = document.querySelector('#idButton'),
       div = document.querySelector('#list-data'),
-      ul = document.createElement('ul');
-var button = document.querySelector('#countBtn');
+      ul = document.createElement('ul'),
+      showResolt = document.querySelector('.calculation-result');
 
-div.appendChild(ul);
+div.append(ul);
 
-button.onclick = function(){
-  const volumeInt = Number(volumeAuto.value);
-  const priceInt = Number(priceAuto.value);
-  const yearInt = Number(yearAuto.value);
+//Check name mar auto
+const pattern = "^[a-zA-Z]+$";
+function checkNameMark(str){
+  return str.match(pattern);
+}
 
+//Click Calculator
+buttonCount.addEventListener("click", function(){
+  const volumeInt = Number(volumeAuto.value),
+        priceInt = Number(priceAuto.value),
+        yearInt = Number(yearAuto.value);
 
-  if(nameMarkAuto.value == "" || volumeInt == "" || priceInt == "" || yearInt == ""){
+  if(nameMarkAuto.value == "" || !checkNameMark(nameMarkAuto.value) ||volumeAuto.value == "" || priceAuto.value == "" || yearAuto.value == ""){
     toastr.error('Error! Check all inputs');
   }else{
 
@@ -96,7 +104,6 @@ button.onclick = function(){
 
   class Autoshow{
     constructor(...obj){
-      //debugger
     this.mark = obj[0];
     this.volume = obj[1];
     this.price = obj[2];
@@ -107,17 +114,15 @@ button.onclick = function(){
                        `Prise: ${this.price}$`, `Year: ${this.year}`,
                        `Tex: ${this.getTax()}`,  `Discount: ${this.getDiscount()}`];
     
-    div.style.display = 'block';
+    showResolt.style.display = 'block';
     
     for(var i = 0; i < listResults.length; i++){
       var li = document.createElement('li');
       li.innerHTML = listResults[i];
-      ul.appendChild(li);
+      ul.append(li);
     }
-
     // Message
     toastr.success('The result of the conducted');
-
   }  
     getTax(){
       return (this.price * 0.2) + (0.01 * this.volume * this.price); 
@@ -129,4 +134,4 @@ button.onclick = function(){
 
   const auto1 = new Autoshow(obj.mark, obj.volume, obj.price, obj.year);  
   }
-}
+});
