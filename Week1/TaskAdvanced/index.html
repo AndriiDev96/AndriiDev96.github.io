@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+    <!-- Preloader -->
+    <div id="loader-wrapper">
+
+        <div class="animation-square">
+            <div class="load-square load-square-1"></div>
+            <div class="load-square load-square-2"></div>
+            <div class="load-square load-square-4"></div>
+            <div class="load-square load-square-3"></div>
+        </div>
+        <p>Loading..</p>
+        <div class="loaderSection section-left"></div>
+        <div class="loaderSection section-right"></div>
+    </div>
+    <!-- Information about me -->
+    <div id="myInformation">
+            <div class="inner-information">
+            <h1>Andrii Volianskyi</h1>
+            <hr>
+            <p>Front-End Education</p>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script> 
+        setTimeout(function(){
+            $('body').addClass('loaded');
+        }, 4000);
+    </script>
+</body>
+</html>

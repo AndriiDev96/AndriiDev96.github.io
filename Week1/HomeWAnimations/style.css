@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.animations .row{
+    height: 300px;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+/* Amination FadeIn*/
+.animation_1{
+    font-size: 34px;
+    text-align: center;
+    animation: fadeIn 6s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.col.md-4{
+    position: relative;
+}
+
+button{
+    position: absolute;
+    left: 43%;
+    bottom: 50px;
+}
+
+/* Animation Wobble */
+.animation_2{
+    font-size: 34px;
+    text-align: center;
+    animation: wobble 1.5s;
+}
+
+@keyframes wobble{
+   0%{transform: translateX(0%);}
+   15%{
+       transform: translateX(-20%); rotate: (-10deg); 
+    }
+   30%{
+       transform: translateX(15%); rotate: (3deg);
+    }
+   45%{
+       transform: translateX(-10%); rotate: (-6deg);
+    }
+   60%{
+       transform: translateX(5%); rotate: (4deg);
+    }
+   75%{
+       transform: translateX(-0%); rotate: (-2deg);
+    }
+   100%{
+       transform: translateX(0%);
+    }
+}
+
+/* Animation Swing */
+.animation_3{
+    font-size: 34px;
+    text-align: center;
+    animation: swing 1.5s;
+}
+
+@keyframes swing{
+    20%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-10deg);
+    }
+    60%{
+        transform: rotate(5deg);
+    }
+    80%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
