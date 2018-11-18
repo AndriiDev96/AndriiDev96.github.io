@@ -41,6 +41,8 @@ My all homeworks
 
 ### Homework_L1W4
 1. DOM [See the result](https://andriidev96.github.io/Week4/DOM/index.html)
+2. Timer [See the result](https://andriidev96.github.io/Week4/SmartWatch/index.html#!)
+3. Homework(Create class Button) [See the result](https://andriidev96.github.io/Week4/Button_Project/index.html)
 
 **Link to the homework_L1W4** [Repository](https://github.com/AndriiDev96/AndriiDev96.github.io/tree/master/Week4)
 
