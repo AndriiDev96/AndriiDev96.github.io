@@ -1,10 +1,66 @@
-.content{
+.main {
+  margin-top: 250px;
+  text-align: center;
+  display: none;
+}
+
+.main-display{
+  display: block;
+}
+
+/* Style block button */
+.block-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: 0;
+  height: 30px;
+  width: 60px;
+  color: white;
+  cursor: pointer;
+}
+
+#btn-uah {
+  background-color: rgb(28, 40, 209);
+}
+
+#btn-usd {
+  background-color: rgb(116, 45, 230);
+  margin-left: 20px;
+}
+
+.result-convert {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.result-convert h4 {
+  margin-bottom: 10px;
+}
+
+.result-uah {
+  width: 15%;
+  background-color: rgba(28, 40, 209, 0.041);
+}
+
+.result-usd {
+  width: 15%;
+  background-color: rgba(116, 45, 230, 0.041);
+}
+
+.content {
+  display: block;
   position: fixed;
   top: 25%;
   left: 25%;
   font-size: 70px;
 }
 
-span{
+span {
   color: rgba(122, 2, 2, 0.897);
 }

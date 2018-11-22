@@ -34,3 +34,29 @@ button{
   width: 50px;
   background-color: orange;
 }
+
+.end_block{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.text-animate{
+  display: none;
+}
+
+.text-animate-block{
+  animation: fadeIn 6s;
+  display: block;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}

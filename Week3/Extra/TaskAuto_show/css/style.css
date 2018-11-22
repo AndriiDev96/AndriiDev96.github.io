@@ -97,6 +97,10 @@ form{
   display: none;
 }
 
+.calculation-result-block{
+  display: block;
+}
+
 .calculation-result h6 i{
   font-size: 40px;
   color: #33b5e5;
