@@ -1,7 +1,6 @@
 /* //REWRITE TO CLASS
 
 function Auditory(maxSize = 100, projector = false){
-  //this {}
   this.maxSize = maxSize;
   this.projector = projector;
   this.check = function(people){
@@ -10,7 +9,6 @@ function Auditory(maxSize = 100, projector = false){
   this.checkProjector = function(people){
     return this.check(people) <= this.projector;
   }
-  //return this
 };
 
 const  auditory1 = new Auditory(30);

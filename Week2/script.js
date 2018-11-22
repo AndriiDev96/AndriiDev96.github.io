@@ -1,78 +1,82 @@
 //-------------------1.------------------------
 //Function that do currency converter from USD to UAH, and reverse (1 USD to 26 UAH).
 //-------------------1.1------------------------
-/* var dolars = prompt("Enter the amount of dolars, please!");
+/* const content = document.querySelector('.content'),
+  btnUah = document.querySelector('#btn-uah'),
+  btnUsd = document.querySelector('#btn-usd'),
+  resultUah = document.querySelector('.result-uah'),
+  resultUsd = document.querySelector('.result-usd'),
+  optConvert = document.querySelector('.main'),
+  tagParg = document.createElement('p'),
+  CURRENCY_VAl = 26;
+//Text javaScript
+content.style.display = 'none';
+//Option convert
+optConvert.classList.add('main-display');
 
-var convert = function(){
-  uah = 26;
-  return (dolars * uah);
-}
+(function () {
 
-alert("It is " + convert(dolars) + " UAH"); */
+  btnUah.addEventListener("click", () => {
+    let dolars = prompt("Enter the amount of dollars, please!");
+    if (dolars == '' || isNaN(dolars)) {
+      alert(`You didn't specify number`);
+    } else {
+      tagParg.innerHTML = `It is ${dolars * CURRENCY_VAl} UAH`;
+      resultUah.append(tagParg);
+    }
+  })
 
+  btnUsd.addEventListener("click", () => {
+    let uah = prompt("Enter the amount of UAH, please!");
+    if (uah == '' || isNaN(uah)) {
+      alert(`You didn't specify number`);
+    } else {
+      let res = uah / CURRENCY_VAl;
+      tagParg.innerHTML = `It is ${res.toFixed(2)} USD`;
+      resultUsd.append(tagParg);
+    }
+  })
+})(); */
 
 //Function that returns min and max numbers.
-//-------------------1.2.1------------------------
+//-------------------1.2------------------------
+/* let array = [2, 3, 43, 34, 5, -6, -767, 23, 2],
+  max = array[0],
+  min = max;
 
- /* var  array = [],
-      nimNum,
-      maxNum;
+function searchMaxMin() {
 
-function  checkInputNum(array){
-
-  while(true){
-    var value = prompt("Enter the number, please!")
-  
-    if(value === "" || value == 0 || value === null || isNaN(value)) break;
-    array.push(value);  
-  }
-}
-
-checkInputNum(array);
-
-minNum = Math.min.apply(null, array);
-maxNum = Math.max.apply(null, array);
-alert("[" + array + "]" + "\n" + "min: " + minNum + " max: " + maxNum); */
-
-//-------------------1.2.2------------------------
-/* var  array = [2, 3, 43, 34, 5, -6, -767, 23, 2],
-      max = array[0],
-      min = max;
-
- function searchMaxMin(){
-  
-  for(var i = 0; i < array.length; i++){
-       
-    if(array[i] > max){
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > max) {
       max = array[i];
     }
-
-    if(min > array[i]){
+    if (min > array[i]) {
       min = array[i];
     }
-  }  
+  }
   return min, max;
- }
+}
 
- searchMaxMin(array);
- console.log("max: " + max + " | " + " min: " + min); */
- 
+searchMaxMin(array);
+console.log("max: " + max + " | " + " min: " + min); */
+
 
 //Write a function that returns average number of values. Do not use Math object. For i.e. [1,4,2] should return [2.33].
 //-------------------1.3------------------------
 
-/* var array = [1, 4, 2];
+/* const array = [1, 4, 2];
 
-var averageNum = function(){
-  var i,
-    sum = 0;
+const averageNum = function(){
+   let sum = 0;
 
-    for(i = 0; i < array.length; i++){
-      sum += array[i] / array.length;
+    for(let i = 0; i < array.length; i++){
+      sum += array[i];
     };
-    return sum;
-}
+  
+    let result = sum / array.length;
 
+    return result.toFixed(2);
+}
 console.log(averageNum(array)); */
 
 //-------------------2.------------------------
@@ -115,7 +119,7 @@ print(10); */
       role: 'student'
     }
   },
-  
+
   4: {
     name: 'Oleg',
     lastName: 'Murko',
@@ -125,19 +129,18 @@ print(10); */
   },
   5: {
     name: 'Kurz',
-    lastName: 'Smith',
-    otherData: {
-      role: 'student'
-    }
+    lastName: 'Smith'
   },
 };
 
-Object.keys(users).forEach(function(key) {
+Object.keys(users).forEach(function (key) {
   const user = users[key];
-  if(user){
-     console.log(key + ":" +  ' name: ', users[key].name);
-     console.log('last name: ' + users[key].lastName);
-     console.log('role: ', users[key].otherData.role)
+  if (user) {
+    console.log(key + ":" + ' name: ', users[key].name);
+    console.log('last name: ' + users[key].lastName);
+    if (users[key].otherData) {
+      console.log('role: ', users[key].otherData.role)
+    }
   }
 }) */
 
@@ -145,32 +148,32 @@ Object.keys(users).forEach(function(key) {
 //Print in console using for. If you think this is simple talk - implement using recursive function.
 
 //-------------------4.1------------------------
-/* function symbol(){
-  var str = " ";
-  var sym = '#';
-  for(var i = 0; i < 8; i++){ 
+/* function printSymbol(){
+  let str = " ";
+  const sym = '#';
+  for(let i = 0; i < 8; i++){ 
    str += sym;
    console.log(str);
   }
 }
-symbol();
+printSymbol(); */
 
 //-------------------4.2------------------------
-var symbolRec = function(n){
-  var sym = "#";
+/* const prtSymbolRec = function(n){
+  const sym = "#";
   console.log(sym.repeat(n));
   if(n < 8){
-    return symbolRec(n+1);
+    return prtSymbolRec(n+1);
   }else{
     return n;
   }
 }
-symbolRec(1); */
+prtSymbolRec(1); */
 
 //-------------------5.------------------------
 //You need create a function to generating fibonacci sequence. The function should receive n as input parameter.
-/* var number = prompt("Please enter a value");
+/* const number = prompt("Please enter a value");
  function fibonacci(number){
   return number <= 1 ? number : fibonacci(number - 1) + fibonacci(number - 2); 
 }
-alert(fibonacci(number));  */
+alert(fibonacci(number)); */

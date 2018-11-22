@@ -75,11 +75,11 @@ const todayYear = new Date().getFullYear(),
       buttonCount = document.querySelector('#idButton'),
       div = document.querySelector('#list-data'),
       ul = document.createElement('ul'),
-      showResolt = document.querySelector('.calculation-result');
+      showResult = document.querySelector('.calculation-result');
 
 div.append(ul);
 
-//Check name mar auto
+//Check name mark auto
 const pattern = "^[a-zA-Z]+$";
 function checkNameMark(str){
   return str.match(pattern);
@@ -95,7 +95,7 @@ buttonCount.addEventListener("click", function(){
     toastr.error('Error! Check all inputs');
   }else{
 
-  var obj = {
+  const obj = {
     mark: nameMarkAuto.value, 
     volume: volumeInt,
     price: priceInt,
@@ -103,21 +103,21 @@ buttonCount.addEventListener("click", function(){
   };
 
   class Autoshow{
-    constructor(...obj){
-    this.mark = obj[0];
-    this.volume = obj[1];
-    this.price = obj[2];
-    this.year = obj[3];
+    constructor(obj){
+    this.mark = obj.mark;
+    this.volume = obj.volume;
+    this.price = obj.price;
+    this.year = obj.year;
 
     //Resul 
-    var listResults = [`Mark: ${this.mark}`, `Volume: ${this.volume}L`, 
+    let listResults = [`Mark: ${this.mark}`, `Volume: ${this.volume}L`, 
                        `Prise: ${this.price}$`, `Year: ${this.year}`,
                        `Tex: ${this.getTax()}`,  `Discount: ${this.getDiscount()}`];
     
-    showResolt.style.display = 'block';
+    showResult.classList.add('calculation-result-block');
     
-    for(var i = 0; i < listResults.length; i++){
-      var li = document.createElement('li');
+    for(let i = 0; i < listResults.length; i++){
+      let li = document.createElement('li');
       li.innerHTML = listResults[i];
       ul.append(li);
     }
@@ -132,6 +132,6 @@ buttonCount.addEventListener("click", function(){
     } 
   }
 
-  const auto1 = new Autoshow(obj.mark, obj.volume, obj.price, obj.year);  
+  const auto1 = new Autoshow(obj);  
   }
 });

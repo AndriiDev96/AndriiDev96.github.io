@@ -1,25 +1,39 @@
-var map  = function(callback){
-  var obj = this,     
-      len = obj.length,  
+//Polyfill
+if (!Array.prototype.map) {
+  Array.prototype.map = function (callback) {
+    let assArray = this,
+      len = assArray.length,
       arr = [];
+    
+    if (typeof callback !== 'function') {
+      throw new TypeError(`${callback}  is not a function`);
+    }
 
-  if(this == null){
-    throw new TypeError('"this" is null');
+    for (let i = 0; i < len; i++) {
+      let val = assArray[i];
+      arr[i] = [...arguments] ? callback.call([...arguments], val, i, assArray) : callback(val, i, assArray);
+    }
+    return arr;
   }
+}
 
-  if(typeof callback !== 'function'){
+//Тест функції
+/*  let map = function (callback) {
+  let assArray = this,
+    len = assArray.length,
+    arr = [];
+    
+  if (typeof callback !== 'function') {
     throw new TypeError(`${callback}  is not a function`);
   }
 
-  for(var i = 0; i < len; i++){
-    if(i in obj){    
-      var val = obj[i];
-      arr[i] = arguments[1] ? callback.call(arguments[1], val, i, obj) : callback(val, i, obj);      
-    } 
-  }                
-    return arr;
-  };
-
+  for (let i = 0; i < len; i++) {
+    let val = assArray[i];
+    arr[i] = [...arguments] ? callback.call([...arguments], val, i, assArray) : callback(val, i, assArray);
+  }
+  return arr;
+  
+} 
 
 //Використання map для переформатування об'єктів в масиві.
 var keyAndVal = [{key: 1, value: 10},
@@ -44,4 +58,4 @@ var roots = map.call(array, Math.sqrt);
 
 console.log(reformKeyAndVal);
 console.log(`input: ${str}  output: ${reverseStr}`);
-console.log(`input: ${array}  output: ${roots}`);
+console.log(`input: ${array}  output: ${roots}`); */

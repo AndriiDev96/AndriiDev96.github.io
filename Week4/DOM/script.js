@@ -1,12 +1,11 @@
-const mainDiv = document.querySelector('.main-div-block');
-const centerBtn = document.querySelector('.section-button');
-const body = document.querySelector('body');
-const buttonBlue = document.querySelectorAll('.btn')[0];
-const buttonPurp = document.querySelectorAll('.btn')[1];
+const mainDiv = document.querySelector('.main-div-block'),
+      centerBtn = document.querySelector('.section-button'),
+      body = document.querySelector('body'),
+      buttonBlue = document.querySelectorAll('.btn')[0],
+      buttonPurp = document.querySelectorAll('.btn')[1];
 
 //SetTimeout
-var i = 0;
-
+let i = 0;
 //Style
 body.setAttribute("style", `margin-left: auto; margin-right: auto; width: 70%; background-color: #ececec`);
 
@@ -18,37 +17,36 @@ buttonBlue.setAttribute("style", `border: none; background-color: #16abf3;
 
 buttonPurp.setAttribute("style", `border: none; background-color: #a038ff; 
                                   padding: 8px 14px 8px 14px; margin-left: 10px; color: white;`);
-
 //Random color                           
 function backgroundDiv(){
-  var symb,
+  let symb,
       color;
   symb = "0123456789ABCDEF";
   color = "#";
-  for(var i = 0; i < 6; i++){
+  for(let i = 0; i < 6; i++){
     color = color + symb[Math.floor(Math.random() * 16)];
   }
   return color;
 };
 
 //Function show divs
-const callback = (function(){
-  function createDiv(){
-    var newDivs = document.createElement('div');
-    var numText = document.createElement('p');
+const callback = (function () {
+  function createDiv() {
+    let newDivs = document.createElement('div');
+    let numText = document.createElement('p');
     newDivs.setAttribute("style", `height: 115px; width: 115px; float: left;
-                              margin-left: 18px; margin-bottom: 30px; 
-                              background-color: ${backgroundDiv()};`);
+                                   margin-left: 18px; margin-bottom: 30px; 
+                                   background-color: ${backgroundDiv()};`);
     numText.setAttribute("style", `text-align: center; padding-top: 30px; font-size: 20px;`);
-        
-    setTimeout(function(){
+
+    setTimeout(function () {
       i++;
-      if(i <= 21){
+      if (i <= 21) {
         numText.innerText = i;
         mainDiv.appendChild(newDivs);
         newDivs.appendChild(numText);
         createDiv();
-      }else{
+      } else {
         clearTimeout();
       }
     }, 500);
@@ -61,5 +59,4 @@ buttonBlue.addEventListener('click', callback);
 //Button updade page
 buttonPurp.addEventListener('click', function(){
   location.reload();
-  //mainDiv.innerHTML = "";
 });  
