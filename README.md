@@ -50,4 +50,15 @@ My all homeworks
 
 ### Homework_L4W5
 
-**Link to the homework_L3W4**
+In process...
+
+**Link to the homework_L4W5**
+
+***
+
+### Homework_L5W6
+1. Requests (XMLHttpRequest/Promise(fetch)/Async/Await(fetch)) [See the result](https://andriidev96.github.io/Week6/Requests/index.html)
+
+**Link to the homework_L5W6** [Repository](https://github.com/AndriiDev96/AndriiDev96.github.io/tree/master/Week6)
+
+***
