@@ -52,7 +52,7 @@ My all homeworks
 
 1. Market [See the result](https://andriidev96.github.io/Week5/Market/index.html)
 2. Casino [See the result](https://andriidev96.github.io/Week5/Casino/index.html)
-3. People management(Create class Button) [See the result](https://andriidev96.github.io/Week5/People management/index.html)
+3. People management [See the result](https://andriidev96.github.io/Week5/People management/index.html)
 
 **Link to the homework_L4W5** [Repository](https://github.com/AndriiDev96/AndriiDev96.github.io/tree/master/Week5)
 
