@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,
+			shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>People</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+		<!-- My css -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<section class="section-navbar">
+			<nav class="navbar">
+				<div class="container">
+					<a class="navbar-brand" href="#"><i class="fas fa-user-circle"></i></a>
+					<a class="navbar-icon-left" data-toggle="modal" data-target="#fluidModalDanger"><i class="fas fa-info"></i></a>
+				</div>
+			</nav>
+			<div class="modal fade right show" id="fluidModalDanger" >
+				<div class="modal-dialog modal-full-height modal-right modal-notify modal-danger">
+					<div class="modal-content">
+						<div class="modal-header">
+							<p class="heading lead">Information</p>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true" class="white-text">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="text-center">
+								<i class="fa fa-info fa-3x mb-3 animated rotateIn text-info"></i>
+								<p>Для роботи з <b class="font-weight-bold">system people management</b> Вам необхідно: </p>
+								<ol class="text-left">
+								<li>Заповнити форму. <b class="font-weight-bold">Обов'язково</b> заповнити всі поля, тому що система не допустить Вас до наступного кроку.
+								<b class="font-weight-bold">Не вигадуйте способів обходу полів.</b></li>
+								<li>Зберегти(SAVE).</li>
+								<li>Перейти до таблиці.</li>
+								</ol>
+								<p>В таблиці Ви можете здійснювати пошук по імені, коли Ви здійсните необхідний пошук і схочете порернутися до списку, 
+									потрібно видалити все з поля Search і перейти далі (Search). Також можна скрити/показати дані, нажавши на вибраний суб'єкт.</p>
+							</div>
+						</div>
+						<div class="modal-footer justify-content-center">
+							<a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Close</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-intro">
+			<div class="text-intro">
+				<h1><i class="fas fa-users"></i></h1>
+			</div>
+		</section>
+		
+		<section class="section-form pb-5">
+			<div class="container">
+				<form class="z-depth-2">
+					<div class="form-row">
+						<div class="col-md-6">
+							<div class="md-form form-group">
+								<input type="text" class="form-control" id="inputName">
+								<label for="inputName">Name</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<select class="mdb-select md-form">
+								<option disabled selected>Other</option>
+								<option>Male</option>
+								<option>Female</option>
+							</select>
+							<label>Sex</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="md-form form-group">
+								<input type="date" class="form-control" id="inputBirthday">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="md-form form-group">
+								<input type="text" class="form-control" id="inputAddress">
+								<label for="inputAddress">Address</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-6">
+							<div class="md-form form-group">
+								<input type="text" class="form-control validate" id="inputPhone"
+									onblur="formatPhone(this)" placeholder="987745434" length="18">
+								<label for="inputPhone" data-error="wrong" data-success="right">Phone</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="md-form form-group">
+								<input type="email" class="form-control validate" id="inputEmail">
+								<label for="inputEmail" data-error="wrong" data-success="right">Email</label>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn btn-save btn-md">Save</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="section-table">
+			<div class="container">
+				<h3 class="text-center pt-5 pb-4">People management<span> /</span></h3>
+				<div class="search-items mt-5">
+					<div class="input-group">
+						<input type="text" class="form-control mr-3" id="search-id"
+							placeholder="Search">
+						<span class="input-group-btn">
+							<button type="button" class="btn-search">Search</button>
+						</span>
+					</div>
+				</div>
+				<div class="list-items my-5">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Name</th>
+								<th scope="col">Sex</th>
+								<th scope="col">Birthday</th>
+								<th scope="col">Address</th>
+								<th scope="col">Email</th>
+								<th scope="col">Phone</th>
+							</tr>
+						</thead>
+						<tbody>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<!-- JQuery -->
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="js/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="js/mdb.min.js"></script>
+		<!-- Sweetalert (Modal window)-->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!-- My Script-->
+		<script type="text/javascript" src="src/script.js"></script>
+	</body>
+
+</html>

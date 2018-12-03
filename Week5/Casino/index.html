@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Casino</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+
+<body>
+  <section class="main-section">
+    <div class="mail">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Casino</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#modal-instruction" class="modal-trigger"><i class="material-icons">info_outline</i></a></li>
+              <li><a href="#!"><i class="material-icons" id="panel-main">view_module</i></a></li>
+              <li><a href="#!"><i class="material-icons" id="reload-page">refresh</i></a></li>
+              <li><a href="#modal-window" class="modal-trigger"><i class="material-icons">more_vert</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Modal Structure -->
+      <div id="modal-window" class="modal">
+        <div class="modal-content">
+          <h3 class="money-info">Your Money</h3>
+          <hr>
+          <div class="bank-casino">
+            <h5>The total amount of money in the Casino: <span class="sumMoney">0</span>$</h5>
+            <a class="waves-effect btn" id="id-sumMoney">Count</a>
+          </div>
+          <p id="error-sumMoney">You don't have many. You have not played yet.</p>
+          <div class="your-money">
+            <h6>Take money from the casino? <a href="#!" id="withdraw-money">Yes</a></h6>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect btn-flat">Close</a>
+        </div>
+      </div>
+      <div id="modal-instruction" class="modal">
+        <div class="modal-content">
+          <h3 class="info-casino">About system Casino</h3>
+          <hr>
+          <div class="use-casino">
+            <p>Зайшовши в систему Casino в перше, що Ви побачите - це головне меню, де:<p>
+              <ul class="description-menu">
+              <li class="description"><i class="material-icons">info_outline</i> - Опис системи Casino</li>
+              <li class="description"><i class="material-icons">view_module</i> - Головна панель</li>
+              <li class="description"><i class="material-icons">refresh</i> - Перезавантаження системи</li>
+              <li class="description"><i class="material-icons">more_vert</i> - Інформація про рахунок та вивід грошей.</li>
+            </ul>
+            <p>На панелі нижче відображається кількість Slot Machine в Casino та кнопка додавання нових. Так як в системі
+              немає адміністратора, при додаванні нових Slot Machine будуть видаватися рандомно, тобто доступні або зайняті.
+              Відповідно сісти за Slot Machine, можна при доступному стані. Також є можливість видалення вибраного стола.
+            </p>
+            <p>При наведенні на доступний Slot Machine відображаються дані, кнікнувши на Slot Machine Ви попадаєте на гру, все що потрібно - це:</p>
+            <ul class="option-put-money">
+              <li>- Нажати на копюроприймач та ввести відповідну суму.</li>
+              <li>- Нажати на <i class="material-icons">autorenew</i> для поставлення грошей в автомат.</li>
+            </ul>
+            <p>Якщо гроші успішно нараховані Ви можете розпочинати гру. За бажанням можна змінити Slot Machine, перейшовши в головну панель.</p>
+            <p>При виході з Casino Вам необхідно перейти в <i class="material-icons">more_vert</i> де зможете підрахувати кошти та забрати.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect btn-flat">Close</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="show-slotMachine">
+    <div class="container">
+      <div class="add-slotMachine">
+        <h5>Number of slot machines:<span id="id-sumSlotMachine"> 0</span></h5>
+        <a class="btn-floating btn-medium waves-effect" id="add-slotMachine"><i class="material-icons">add</i></a>
+      </div>
+      <div class="all-slotMachine">
+
+      </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal-message" class="modal">
+      <div class="modal-content">
+        <h4>Information</h4>
+        <hr>
+        <p>Sorry! At the moment, the slot machine is busy. Please try again later.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="mess-busyMechine">Close</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-slotMachine">
+    <div class="panel-slotMachine">
+      <div class="winning-info">
+        <p>Rules</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Couple</th>
+              <th>$</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>143</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>**N</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>***</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>777</td>
+              <td>100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="slotMachine z-depth-4">
+        <div class="top-slotMachine">
+          <h3 id="id-text-slotMach">Try it!</h3>
+        </div>
+        <div class="body-slotMachine z-depth-3">
+          <h1 id="num-one">0</h1>
+          <h1 id="num-two">0</h1>
+          <h1 id="num-three">0</h1>
+        </div>
+        <div class="bottom-slotMachine">
+          <div class="last-win">
+            <p>Last win</p>
+            <h5 id="win-money"></h5>
+          </div>
+          <div class="total-money">
+            <p>Money</p>
+            <h5 id="enter-money"></h5>
+          </div>
+          <div class="bet-money">
+            <p>Bet</p>
+            <h5>2</h5>
+          </div>
+          <button type="button" id="id-btnSpin">Spin</button>
+        </div>
+        <div class="section-money">
+          <div class="put-money modal-trigger" data-target="modal-enter-money">
+            <div class="inner-color"></div>
+            <div class="inner-color"></div>
+            <div class="inner-color"></div>
+          </div>
+          <div class="bring-in-money">
+            <a href="#!"><i class="material-icons" id="id-autorenew">autorenew</i></a>
+          </div>
+        </div>
+        <div id="modal-enter-money" class="modal">
+          <div class="modal-content">
+            <h5>Please, Enter the money.</h5>
+            <hr>
+            <form>
+              <div class="row">
+                <div class="input-field col">
+                  <i class="material-icons prefix" id="attach_money">attach_money</i>
+                  <input type="number" id="input_money">
+                  <label for="input_money">Money (50 - 200) </label>
+                </div>
+              </div>
+            </form>
+            <p class="error-message-text">Enter the correct amount (50 - 200).</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="waves-effect btn-flat" id="get-money">Ok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="materialize/js/materialize.min.js"></script>
+  <!-- My script -->
+  <script src="src/script.js"></script>
+</body>
+
+</html>

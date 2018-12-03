@@ -1,0 +1,98 @@
+.section-navbar .navbar {
+    background-color: rgb(170, 5, 32);
+}
+
+.section-navbar a {
+    padding: 0;
+}
+
+.section-navbar a i{
+    color: white;
+    font-size: 35px;
+}
+
+.section-navbar .navbar-icon-left i{
+    font-size: 15px;
+    float: left;
+}
+
+.section-navbar .btn-outline-danger{
+    padding: 10px 17px 10px 17px;
+}
+
+.section-intro {
+    height: 200px;
+    background-color: rgba(2, 2, 2, 0.829);
+}
+
+.text-intro h1 {
+    color: white;
+    text-align: center;
+}
+
+.text-intro i {
+    padding-top: 30px;
+    font-size: 80px;
+}
+
+.section-form form {
+    margin-top: -50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.dropdown-content li>span {
+    color: rgb(218, 4, 40);
+}
+
+.btn-save {
+    background-color: rgb(218, 4, 40);
+}
+
+.btn-save:hover {
+    background-color: rgb(170, 5, 32);
+    color: white;
+}
+
+.input-group .form-control {
+    border-radius: 0;
+}
+
+.container .btn-search {
+    height: 38px;
+    width: 100px;
+    background-color: rgb(218, 4, 40);
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    background-color: rgb(170, 5, 32);
+    color: white;
+}
+
+.section-table h3 span{
+    color: rgb(218, 4, 40);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.list-items .table tr td,
+.list-items .table tr th {
+    font-size: 16px;
+}
+
+tbody tr:hover {
+    background-color: rgba(68, 68, 68, 0.137);
+    cursor: pointer;
+}
+
+tbody tr:active {
+    background-color: rgba(15, 15, 15, 0.205);
+}
