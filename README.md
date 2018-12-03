@@ -40,6 +40,7 @@ My all homeworks
 ***
 
 ### Homework_L3W4
+
 1. DOM [See the result](https://andriidev96.github.io/Week4/DOM/index.html)
 2. Timer [See the result](https://andriidev96.github.io/Week4/SmartWatch/index.html#!)
 3. Homework(Create class Button) [See the result](https://andriidev96.github.io/Week4/Button_Project/index.html)
@@ -50,13 +51,16 @@ My all homeworks
 
 ### Homework_L4W5
 
-In process...
+1. Market [See the result](https://andriidev96.github.io/Week5/Market/index.html)
+2. Casino [See the result](https://andriidev96.github.io/Week5/Casino/index.html)
+3. People management [See the result](https://andriidev96.github.io/Week5/People_management/index.html)
 
-**Link to the homework_L4W5**
+**Link to the homework_L4W5** [Repository](https://github.com/AndriiDev96/AndriiDev96.github.io/tree/master/Week5)
 
 ***
 
 ### Homework_L5W6
+
 1. Requests (XMLHttpRequest/Promise(fetch)/Async/Await(fetch)) [See the result](https://andriidev96.github.io/Week6/Requests/index.html)
 
 **Link to the homework_L5W6** [Repository](https://github.com/AndriiDev96/AndriiDev96.github.io/tree/master/Week6)

@@ -1,0 +1,404 @@
+.main-section nav {
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(236, 64, 122);
+}
+
+.main-section nav li a i {
+  height: 50px;
+}
+
+.main-section nav .nav-wrapper i {
+  line-height: 50px;
+}
+
+.add-slotMachine {
+  padding-top: 10px;
+  ;
+  display: flex;
+  justify-content: space-between;
+  width: 100%
+}
+
+#id-sumSlotMachine {
+  font-weight: 600;
+}
+
+.money-info {
+  text-align: center;
+  color: rgb(236, 64, 122);
+  font-weight: 500;
+}
+
+.bank-casino {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bank-casino a.btn {
+  background-color: rgb(66, 165, 245);
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+#error-sumMoney {
+  margin: 0;
+  padding-left: 5px;
+  color: rgb(255, 0, 0);
+  display: none;
+}
+
+.your-money {
+  margin-top: 40px;
+}
+
+.modal-content h6 a {
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 15px;
+}
+
+#modal-instruction {
+  width: 40%;
+}
+
+#modal-instruction h3 {
+  color: rgb(236, 64, 122);
+  text-align: center;
+}
+
+#modal-instruction ul {
+  padding-left: 20px;
+}
+
+#modal-instruction ul li i {
+  font-size: 17px;
+  color: rgb(236, 64, 122);
+  position: relative;
+  top: 4px;
+}
+
+.use-casino p {
+  text-indent: 15px;
+}
+
+.use-casino p i {
+  position: relative;
+  font-size: 17px;
+  padding-top: 1px;
+  color: rgb(236, 64, 122);
+  display: inline;
+  top: 4px;
+}
+
+.show_slotMachine_d-none {
+  display: none;
+}
+
+.add-slotMachine .btn-floating {
+  background-color: rgb(66, 165, 245);
+}
+
+.add-slotMachine .btn-floating:hover {
+  background-color: rgb(66, 165, 245);
+}
+
+.all-slotMachine {
+  margin-top: 40px;
+}
+
+.all-slotMachine div {
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+  margin-left: 12px;
+  margin-bottom: 10px;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+.all-slotMachine div:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.all-slotMachine div .fa-lock,
+.all-slotMachine div .fa-unlock {
+  font-size: 40px;
+  color: rgba(63, 63, 63, 0.918);
+  position: relative;
+  top: 70px;
+  left: 135px;
+}
+
+.all-slotMachine div p {
+  text-align: center;
+  padding-top: 50px;
+  color: rgb(235, 235, 235);
+}
+
+.all-slotMachine div:hover .fa-lock,
+.all-slotMachine div:hover .fa-unlock {
+  transform: translateY(-40px);
+}
+
+.all-slotMachine div:hover p {
+  color: rgb(156, 156, 156);
+}
+
+.all-slotMachine div a {
+  position: relative;
+  float: right;
+  font-size: 20px;
+  color: rgba(63, 63, 63, 0.918);
+  top: 20px;
+  right: 20px;
+  transition: .2s;
+}
+
+.all-slotMachine div a:hover {
+  transition: .2s;
+  font-size: 22px;
+  color: rgb(208, 10, 20);
+}
+
+#modal-message p {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+#modal-message a {
+  color: white;
+  background-color: rgb(66, 165, 245);
+}
+
+.section-slotMachine {
+  display: none;
+}
+
+.section_slotMachine_d-block {
+  display: block;
+}
+
+.panel-slotMachine {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winning-info {
+  height: 300px;
+  width: 13%;
+  background-color: rgba(245, 245, 245, 0.589);
+  margin-right: 100px;
+  border-radius: 5px;
+  border: 4px solid rgba(233, 233, 233, 0.637);
+}
+
+.winning-info p {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.winning-info thead tr th {
+  padding-left: 10px;
+}
+
+.winning-info tbody tr td {
+  padding-left: 10px;
+}
+
+.slotMachine {
+  height: 530px;
+  width: 35%;
+  background-color: rgb(236, 64, 122);
+  border-radius: 10px;
+}
+
+.top-slotMachine {
+  position: relative;
+  top: 30px;
+  width: 92%;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgb(53, 52, 52);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-slotMachine h3 {
+  margin: 0px;
+  padding-top: 5px;
+  text-align: center;
+  color: white;
+}
+
+.body-slotMachine {
+  display: flex;
+  justify-content: center;
+  width: 92%;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body-slotMachine h1 {
+  display: inline-block;
+  font-size: 170px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.body-slotMachine h1:nth-child(2) {
+  margin: 0 8% 0 8%;
+}
+
+.bottom-slotMachine {
+  width: 92%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-slotMachine h5 {
+  color: rgb(236, 64, 122);
+}
+
+.last-win {
+  width: 35%;
+  height: 70px;
+  background-color: rgba(245, 245, 245, 0.877);
+  border: 1px solid rgba(194, 194, 194, 0.945);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  text-align: center;
+}
+
+.last-win p,
+.last-win h5 {
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.total-money {
+  width: 35%;
+  height: 70px;
+  background-color: rgba(245, 245, 245, 0.877);
+  border-top: 1px solid rgba(194, 194, 194, 0.945);
+  border-bottom: 1px solid rgba(194, 194, 194, 0.945);
+  text-align: center;
+}
+
+.total-money p,
+.total-money h5 {
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.bet-money {
+  width: 15%;
+  height: 70px;
+  background-color: rgba(245, 245, 245, 0.877);
+  background-color: rgba(245, 245, 245, 0.877);
+  border: 1px solid rgba(194, 194, 194, 0.945);
+  text-align: center;
+}
+
+.bet-money p,
+.bet-money h5 {
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+#id-btnSpin {
+  height: 70px;
+  border: none;
+  width: 15%;
+  font-size: 20px;
+  background-color: rgb(66, 165, 245);
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+#id-btnSpin:active {
+  background-color: rgb(53, 144, 219);
+  color: white;
+}
+
+.section-money {
+  display: flex;
+}
+
+.put-money {
+  position: relative;
+  display: flex;
+  background-color: rgb(53, 52, 52);
+  height: 17px;
+  width: 12%;
+  left: 4%;
+  top: 40px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.inner-color {
+  height: 3px;
+  width: 20%;
+  margin-left: 10%;
+  background-color: rgb(0, 160, 48);
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.bring-in-money {
+  position: relative;
+  left: 40px;
+  top: 33px;
+}
+
+.bring-in-money a {
+  color: white;
+}
+
+.bring-in-money i {
+  font-size: 32px;
+}
+
+#modal-enter-money {
+  width: 30%;
+}
+
+#modal-enter-money h5 {
+  text-align: center;
+  color: rgb(236, 64, 122);
+}
+
+#modal-enter-money .row {
+  margin: 0;
+}
+
+#modal-enter-money .input-field {
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.error-message-text {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  color: rgb(255, 0, 0);
+  display: none;
+}
