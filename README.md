@@ -63,6 +63,11 @@ My all homeworks
 
 1. Requests (XMLHttpRequest/Promise(fetch)/Async/Await(fetch)) [See the result](https://andriidev96.github.io/Week6/Requests/index.html)
 
-**Link to the homework_L5W6** [Repository](https://github.com/AndriiDev96/AndriiDev96.github.io/tree/master/Week6)
+**Link to the homework** [Repository](https://github.com/AndriiDev96/AndriiDev96.github.io/tree/master/Week6)
+
+**Additional task**  (_Requests_):
+
+* Requests(fetch) and Gulp [See the result](https://github.com/AndriiDev96/Ajax)
+* Axios [See the result](https://github.com/AndriiDev96/Axios)
 
 ***
