@@ -69,5 +69,6 @@ My all homeworks
 
 * Requests(fetch) and Gulp [See the result](https://github.com/AndriiDev96/Ajax)
 * Axios [See the result](https://github.com/AndriiDev96/Axios)
+* Promise.all [See the result](https://andriidev96.github.io/Week6/random_user_from_server/index.html)
 
 ***
