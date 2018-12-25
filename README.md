@@ -65,10 +65,18 @@ My all homeworks
 
 **Link to the homework** [Repository](https://github.com/AndriiDev96/AndriiDev96.github.io/tree/master/Week6)
 
-**Additional task**  (_Requests_):
+**Additional tasks**  (_Requests_):
 
 * Requests(fetch) and Gulp [See the result](https://github.com/AndriiDev96/Ajax)
 * Axios [See the result](https://github.com/AndriiDev96/Axios)
 * Promise.all [See the result](https://andriidev96.github.io/Week6/random_user_from_server/index.html)
+
+***
+
+### Homework_L_W9
+
+**Additional task**
+
+* Node.js(Express.js) [See the result](https://github.com/AndriiDev96/work_with_dom_Node.js)
 
 ***
